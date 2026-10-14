@@ -198,7 +198,7 @@ fn put(th: Theme, name: string, value: string) -> Theme {
         th.entries.map({ e ->
             val hit = e.name == name;
             val out = if (hit) fresh else e;
-            out;
+            out
         })
     else
         th.entries.append(one);
